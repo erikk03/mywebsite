@@ -33,6 +33,14 @@ body {
     border-radius: 30px;
     text-align: center;
     max-width: 500px;
+    transform: rotateY(15deg) rotateX(5deg); /* Adjust rotation for 3D effect */
+    transform-style: preserve-3d; /* Preserve 3D transformations */
+    transition: transform 0.5s ease-in-out; /* Add transition for smooth effect */
+
+}
+
+.background:hover .content {
+    transform: rotateY(0deg) rotateX(0deg); /* Adjust hover effect */
 }
 
 header h1 {
